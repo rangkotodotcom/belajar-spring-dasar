@@ -21,6 +21,6 @@ public class DependencyInjectionConfiguration {
 
     @Bean
     public FooBar fooBar(Foo foo, Bar bar) {
-        return new FooBar(foo, bar);
+        return new FooBar();
     }
 }
