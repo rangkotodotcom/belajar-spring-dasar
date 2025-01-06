@@ -8,15 +8,15 @@ import rangkotodotcom.spring.core.data.Foo;
 
 @Slf4j
 @Configuration
-public class DuplicateConfiguration {
+public class BeanNameConfiguration {
 
     @Primary
-    @Bean
+    @Bean(value = "fooFirst")
     public Foo foo1(){
         return new Foo();
     }
 
-    @Bean
+    @Bean(value = "fooSecond")
     public Foo foo2(){
         return new Foo();
     }
